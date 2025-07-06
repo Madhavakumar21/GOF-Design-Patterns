@@ -13,7 +13,7 @@
  *          we have 2 methods called createSpace() & getSpace(). The 1st method should be called only once 
  *          (at the start of the program). The second method can be called at any time (whenever we need a reference 
  *          to the object). Here, if we accidentally call the createSpace() method twice, 2 MemSpace objects 
- *          will be created, totalling 1 GB of RAM. This can be a fatal point of failure in our application. 
+ *          will be created, totaling 1 GB of RAM. This can be a fatal point of failure in our application. 
  *          Which Design Pattern can be used to avoid this?
  *      Solution:
  *          Singleton Pattern
