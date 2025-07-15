@@ -1,22 +1,24 @@
 /**
- * @file    MemSpace.java
- * @date    2025-06-07
+ * @file    LinearCollection.java
+ * @date    2025-07-15
  * @author  Madhavakumar D
- * @brief   Singleton Pattern
+ * @brief   Strategy Pattern
  * 
  * @details 
- *      Contains the basic implementation of Singleton Pattern.
+ *      Contains the basic implementation of Strategy Pattern.
  *      
  *      Problem Statement:
- *          We want to develop a Custom Heap in our application and have implemented a class called MemSpace 
- *          which will allocate 500 MB of space in RAM for us to store data. In our application logic, 
- *          we have 2 methods called createSpace() & getSpace(). The 1st method should be called only once 
- *          (at the start of the program). The second method can be called at any time (whenever we need a reference 
- *          to the object). Here, if we accidentally call the createSpace() method twice, 2 MemSpace objects 
- *          will be created, totaling 1 GB of RAM. This can be a fatal point of failure in our application. 
- *          Which Design Pattern can be used to avoid this?
+ *          We want to implement a custom data-structure called LinearCollection, 
+ *          which will act as a wrapper class that encapsulates Array related methods with an array. 
+ *          One such method that we are going to implement is sort(). But our requirement is to 
+ *          develop the data-structure generically that it can contain any type of values. 
+ *          So, our sort() method now needs to use different algorithm/approach to sort for 
+ *          different types of values. But we cannot predict and implement all algorithms 
+ *          before-hand by overloading the same method. We need a way to dynamically inject our 
+ *          "Sorting Behaviour" into the class at RunTime. 
+ *          WHICH DESIGN PATTERN CAN BE USED HERE?
  *      Solution:
- *          Singleton Pattern
+ *          Strategy Pattern
  */
 
 package StrategyPattern;

@@ -1,6 +1,6 @@
 /**
  * @file    MemSpace.java
- * @date    2025-06-07
+ * @date    2025-07-06
  * @author  Madhavakumar D
  * @brief   Singleton Pattern
  * 
@@ -14,7 +14,7 @@
  *          (at the start of the program). The second method can be called at any time (whenever we need a reference 
  *          to the object). Here, if we accidentally call the createSpace() method twice, 2 MemSpace objects 
  *          will be created, totaling 1 GB of RAM. This can be a fatal point of failure in our application. 
- *          Which Design Pattern can be used to avoid this?
+ *          WHICH DESIGN PATTERN CAN BE USED TO AVOID THIS?
  *      Solution:
  *          Singleton Pattern
  */
